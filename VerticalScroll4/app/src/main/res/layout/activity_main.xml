@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <com.example.xyz.verticalscroll4.swipe.SwipeLayout
+
+        android:id="@+id/SwipeScorll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.xyz.verticalscroll4.MainActivity"
+        >
+
+
+
+        <!--下拉呈现布局 -->
+        <!--第二页layout-->
+        <RelativeLayout
+            android:id="@+id/top"
+            android:gravity="center"
+            android:layout_gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#30f3fd"
+            >
+
+            <ImageView
+                android:src="@mipmap/pull_up"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第二页layout"
+                android:textColor="#df9500"
+                android:textSize="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+        <!--第一页layout -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="#ff0000"
+            android:id="@+id/bottom"
+            >
+
+            <ImageView
+                android:src="@mipmap/pull_down"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第一页layout"
+                android:textColor="#0022ff"
+                android:textSize="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                />
+
+
+        </RelativeLayout>
+
+
+    </com.example.xyz.verticalscroll4.swipe.SwipeLayout>
+
+
+
+
+    <!--悬浮布局-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/floatLayout"
+        android:gravity="center"
+        >
+
+        <ImageView
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:id="@+id/floatImage"
+            android:src="@mipmap/camera"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>
+
